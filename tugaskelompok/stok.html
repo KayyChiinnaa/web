@@ -3,37 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stok Bahan Ajar - SITTA UT</title>
+    <title>Informasi Bahan Ajar - SITTA UT</title>
+    <link rel="icon" href="assets/mit.png">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="dashboard-container">
+
+      
         <header class="dashboard-header">
             <div class="header-left">
-                <img src="assets/mit.png" alt="Logo UT" class="logo">
+                <img src="assets/mit.png" alt="Logo MIT" class="logo">
                 <h1>Massachusetts<br>Institute of Technology</h1>
-            </div>
-            <div class="header-right">
-                
-                <button id="logoutBtn" class="btn-secondary">Keluar</button>
             </div>
         </header>
 
+    
         <nav class="dashboard-nav">
-            <ul>
+            <ul class="nav-left">
                 <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
                 <li><a href="stok.html" class="nav-link active">Informasi Bahan Ajar</a></li>
                 <li><a href="tracking.html" class="nav-link">Tracking Pengiriman</a></li>
                 <li class="dropdown">
                     <a href="materi.html" class="nav-link">Materi</a>
                     <div class="dropdown-content">
-              
+                        <a href="materi-semester1.html">Semester 1</a>
+                        <a href="materi-semester2.html">Semester 2</a>
+                        <a href="materi-semester3.html">Semester 3</a>
                     </div>
                 </li>
-               
             </ul>
+
+            <div class="nav-right">
+                <button id="logoutBtn" class="btn-logout">Keluar</button>
+            </div>
         </nav>
 
+      
         <main class="stok-main">
             <div class="stok-header">
                 <h2>Informasi Stok Bahan Ajar</h2>
@@ -51,13 +57,18 @@
                     </tr>
                 </thead>
                 <tbody id="stockTableBody">
-                    <!-- Data akan diisi oleh JavaScript -->
+           
                 </tbody>
             </table>
         </main>
+
+     
+        <footer class="dashboard-footer">
+            <p>&copy; 2025 SITTA UT | Dikembangkan oleh MIT Dev Team</p>
+        </footer>
     </div>
 
-    <!-- Modal Tambah Stok -->
+   
     <div id="addStockModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
