@@ -3,74 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Materi </title>
+    <title>Materi - SITTA UT</title>
+    <link rel="icon" href="assets/mit.png">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="dashboard-container">
+   
         <header class="dashboard-header">
             <div class="header-left">
                 <img src="assets/mit.png" alt="Logo UT" class="logo">
                 <h1>Massachusetts<br>Institute of Technology</h1>
             </div>
-            <div class="header-right">
-                <!-- <span id="greeting" class="greeting"></span> -->
-                <button id="logoutBtn" class="btn-secondary">Keluar</button>
-            </div>
         </header>
 
         <nav class="dashboard-nav">
-            <ul>
+            <ul class="nav-left">
                 <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
                 <li><a href="stok.html" class="nav-link">Informasi Bahan Ajar</a></li>
                 <li><a href="tracking.html" class="nav-link">Tracking Pengiriman</a></li>
                 <li class="dropdown">
                     <a href="#" class="nav-link active">Materi</a>
                     <div class="dropdown-content">
-                        
+                        <a href="materi-semester1.html">Semester 1</a>
+                        <a href="materi-semester2.html">Semester 2</a>
+                        <a href="materi-semester3.html">Semester 3</a>
                     </div>
                 </li>
-          
             </ul>
+
+            <div class="nav-right">
+                <button id="logoutBtn" class="btn-logout">Keluar</button>
+            </div>
         </nav>
 
         <main class="dashboard-main">
-            <div class="dashboard-cards">
+            <section class="dashboard-cards">
                 <div class="card">
                     <h3>PHP</h3>
-                  
                     <a href="assets/bab 1 Pengatar OOP PHP.pdf" target="_blank" class="btn-primary">Lihat</a>
                 </div>
-                
+
                 <div class="card">
-                    <h3>Mvc Bab 2</h3>
-                 
-                    <a href="assets/Bab 2 Konsep MVC (1).pdf" target="_blank" class="btn-primary">Lacak</a>
+                    <h3>MVC Bab 2</h3>
+                    <a href="assets/Bab 2 Konsep MVC (1).pdf" target="_blank" class="btn-primary">Lihat</a>
                 </div>
-                
+
                 <div class="card">
-                    <h3>bab 4 OOP FM </h3>
-                
-                    <a href="assets/Bab 4 produck OOP 2 (Framework).pdf" target="_blank"  class="btn-primary">Lihat</a>
+                    <h3>Bab 4 OOP Framework</h3>
+                    <a href="assets/Bab 4 produck OOP 2 (Framework).pdf" target="_blank" class="btn-primary">Lihat</a>
                 </div>
-                
+
                 <div class="card">
-                    <h3>bab 1 OOP MVC</h3>
-                   
-                    <a href="assets/bab1-2 pemweb lanjut oop dan mvc .pdf" target="_blank"  class="btn-primary">Lihat</a>
+                    <h3>Bab 1 OOP MVC</h3>
+                    <a href="assets/bab1-2 pemweb lanjut oop dan mvc .pdf" target="_blank" class="btn-primary">Lihat</a>
                 </div>
+
                 <div class="card">
-                    <h3>Belajar OOP s2</h3>
-                 
-                    <a href="assets/belajar-oop-php-mysql.pdf semester 2.pdf" target="_blank"  class="btn-primary">Lihat</a>
+                    <h3>Belajar OOP Semester 2</h3>
+                    <a href="assets/belajar-oop-php-mysql.pdf semester 2.pdf" target="_blank" class="btn-primary">Lihat</a>
                 </div>
+
                 <div class="card">
-                    <h3>Model pemweban oop mvc</h3>
-                    
-                    <a href="assets/Modul PemwebLan 2019 OOP MVC.pdf" target="_blank"  class="btn-primary">Lihat</a>
+                    <h3>Model Pemweban OOP MVC</h3>
+                    <a href="assets/Modul PemwebLan 2019 OOP MVC.pdf" target="_blank" class="btn-primary">Lihat</a>
                 </div>
-            </div>
+            </section>
         </main>
+
+     
+        <footer class="dashboard-footer">
+            <p>&copy; 2025 SITTA UT | Dikembangkan oleh MIT Dev Team</p>
+        </footer>
     </div>
 
     <script src="js/script.js"></script>
